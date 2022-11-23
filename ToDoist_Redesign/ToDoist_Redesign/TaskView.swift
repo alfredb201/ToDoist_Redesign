@@ -9,7 +9,7 @@ import SwiftUI
 
 struct TaskView: View {
     
-    @State var isSelected: Bool = false 
+    @State var isSelected: Bool = false
     
     var body: some View {
         List(0..<5){ item in
