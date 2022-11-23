@@ -9,10 +9,10 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @State var text: String
+    @State var text: String = ""
     @State var showInfoModalView = false
-    @State var title: String
-    @State var note: String
+    @State var title: String = ""
+    @State var note: String = ""
     @State var date = Date()
     @Environment(\.colorScheme) var colorScheme
     var body: some View {
@@ -123,6 +123,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(text: "", title: "", note: "")
+        ContentView()
     }
 }

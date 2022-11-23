@@ -10,9 +10,8 @@ import SwiftUI
 struct TaskView: View {
     
     @State var isSelected: Bool = false
-    
+        
     var body: some View {
-        List(0..<5){ item in
         HStack{
             Toggle("", isOn: $isSelected)
                 .labelsHidden()
@@ -37,7 +36,6 @@ struct TaskView: View {
             Text ("Today")
             Text(" ")
         }
-    }
     }
 }
 
