@@ -7,14 +7,6 @@
 
 import SwiftUI
 
-#if canImport(UIKit)
-extension View {
-    func hideKeyboard() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
-    }
-}
-#endif
-
 
 struct ContentView: View {
     @State var text: String
@@ -56,7 +48,6 @@ struct ContentView: View {
                                                         Button("Add",action: {})
                                                     }
                                                 }
-                                            
                                         }
                                         
                                         Section (header: Text("Note")){
@@ -64,11 +55,7 @@ struct ContentView: View {
                                             DatePicker ("Date", selection: $date,displayedComponents: .date)
                                                 .datePickerStyle(.graphical)
                                         }
-                                    }
-                                }
-                            }
-                            .onTapGesture {
-                                hideKeyboard()
+                                    }                                }
                             }
                         }
                     }
@@ -117,9 +104,6 @@ struct ContentView: View {
                                     }
                                 }
                             }
-                            .onTapGesture {
-                                hideKeyboard()
-                            }
                         }
                     }
             }.tabItem {
@@ -134,16 +118,11 @@ struct ContentView: View {
                 Image(systemName: "checkmark.rectangle.portrait")
                 Text("Done") }.tag(3)
         }
-        .onTapGesture {
-            hideKeyboard()
-        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(text: "", title: "", note: "")
-
-        
     }
 }

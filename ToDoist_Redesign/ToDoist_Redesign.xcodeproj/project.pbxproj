@@ -11,6 +11,8 @@
 		9002446429267EEE00F62852 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9002446329267EEE00F62852 /* ContentView.swift */; };
 		9002446629267EEF00F62852 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9002446529267EEF00F62852 /* Assets.xcassets */; };
 		9002446929267EEF00F62852 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9002446829267EEF00F62852 /* Preview Assets.xcassets */; };
+		9010B266292D3D2F00D1D1C5 /* Checkbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9010B265292D3D2F00D1D1C5 /* Checkbox.swift */; };
+		9010B268292D3EA400D1D1C5 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9010B267292D3EA400D1D1C5 /* TaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		9002446329267EEE00F62852 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9002446529267EEF00F62852 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9002446829267EEF00F62852 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9010B265292D3D2F00D1D1C5 /* Checkbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkbox.swift; sourceTree = "<group>"; };
+		9010B267292D3EA400D1D1C5 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				9002446129267EEE00F62852 /* ToDoist_RedesignApp.swift */,
 				9002446329267EEE00F62852 /* ContentView.swift */,
+				9010B265292D3D2F00D1D1C5 /* Checkbox.swift */,
+				9010B267292D3EA400D1D1C5 /* TaskView.swift */,
 				9002446529267EEF00F62852 /* Assets.xcassets */,
 				9002446729267EEF00F62852 /* Preview Content */,
 			);
@@ -139,6 +145,8 @@
 			files = (
 				9002446429267EEE00F62852 /* ContentView.swift in Sources */,
 				9002446229267EEE00F62852 /* ToDoist_RedesignApp.swift in Sources */,
+				9010B266292D3D2F00D1D1C5 /* Checkbox.swift in Sources */,
+				9010B268292D3EA400D1D1C5 /* TaskView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,7 +282,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,7 +311,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
