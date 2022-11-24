@@ -18,8 +18,8 @@ struct ContentView: View {
     var body: some View {
         
         TabView(selection: .constant(1)) {
-            NavigationView{
-                TaskViewToday()
+            NavigationStack{
+                    TaskViewToday()
                     .searchable(text: $text)
                     .navigationTitle("Today")
                     .toolbar{
@@ -63,7 +63,7 @@ struct ContentView: View {
                 Image(systemName: "calendar")
                 Text("Today") }.tag(1)
             
-            NavigationView{
+            NavigationStack{
                 TaskViewInbox()
                     .searchable(text: $text)
                     .navigationTitle("Inbox")
@@ -110,7 +110,7 @@ struct ContentView: View {
                 Image(systemName: "tray")
                 Text("Inbox") }.tag(2)
             
-            NavigationView{
+            NavigationStack{
                 TaskViewDone()
                     .searchable(text: $text)
                     .navigationTitle("Done")

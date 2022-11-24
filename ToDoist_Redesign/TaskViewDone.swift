@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TaskViewDone: View {
-    @State var isSelected: Bool = false
+    @State var isSelected: Bool = true
         
     var body: some View {
         
