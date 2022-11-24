@@ -34,7 +34,6 @@ struct TaskViewToday: View {
                         }
                         Spacer()
                         Image(systemName: "clock.fill")
-                            .foregroundColor(.blue)
                         Text ("\(TaskNote.TaskDate)")
                         Text(" ")
                     }
